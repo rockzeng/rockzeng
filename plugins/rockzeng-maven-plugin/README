@@ -5,13 +5,30 @@
             <groupId>org.rockzeng.plugins</groupId>
             <artifactId>rockzeng-maven-plugin</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <configuration>
+                <url>http://www.baidu.com</url>
+                <options>
+                    <option>one</option>
+                    <option>tow</option>
+                    <option>three</option>
+                </options>
+            </configuration>
             <executions>
                 <execution>
+                    <id>query</id>
+                    <phase>compile</phase>
+                    <goals>
+                        <goal>query</goal>
+                    </goals>
+                </execution>
+                <execution>
+                    <id>sayhi</id>
                     <phase>compile</phase>
                     <goals>
                         <goal>sayhi</goal>
                     </goals>
                 </execution>
             </executions>
-    </plugin>
+        </plugin>
+    </plugins>
 </build>
