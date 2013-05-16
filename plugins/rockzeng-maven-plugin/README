@@ -1,0 +1,17 @@
+在pom.xml中添加以下片段:
+<build>
+    <plugins>
+        <plugin>
+            <groupId>org.rockzeng.plugins</groupId>
+            <artifactId>rockzeng-maven-plugin</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <executions>
+                <execution>
+                    <phase>compile</phase>
+                    <goals>
+                        <goal>sayhi</goal>
+                    </goals>
+                </execution>
+            </executions>
+    </plugin>
+</build>
