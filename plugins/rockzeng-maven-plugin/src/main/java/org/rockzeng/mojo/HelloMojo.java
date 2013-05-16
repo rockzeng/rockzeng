@@ -11,5 +11,6 @@ public class HelloMojo extends AbstractMojo {
     @Override
     public void execute() throws MojoExecutionException, MojoFailureException {
         getLog().info("Hello World!");
+
     }
 }
